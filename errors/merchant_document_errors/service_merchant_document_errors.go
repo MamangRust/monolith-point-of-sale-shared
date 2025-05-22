@@ -3,7 +3,7 @@ package merchantdocument_errors
 import (
 	"net/http"
 
-	"github.com/MamangRust/monolith-payment-gateway-shared/domain/response"
+	"github.com/MamangRust/monolith-point-of-sale-shared/domain/response"
 )
 
 var (
