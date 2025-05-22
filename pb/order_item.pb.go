@@ -745,7 +745,7 @@ const file_order_item_proto_rawDesc = "" +
 	"\aFindAll\x12\x1b.pb.FindAllOrderItemRequest\x1a\".pb.ApiResponsePaginationOrderItem\x12W\n" +
 	"\fFindByActive\x12\x1b.pb.FindAllOrderItemRequest\x1a*.pb.ApiResponsePaginationOrderItemDeleteAt\x12X\n" +
 	"\rFindByTrashed\x12\x1b.pb.FindAllOrderItemRequest\x1a*.pb.ApiResponsePaginationOrderItemDeleteAt\x12O\n" +
-	"\x14FindOrderItemByOrder\x12\x1c.pb.FindByIdOrderItemRequest\x1a\x19.pb.ApiResponsesOrderItemB\x19Z\x17pointofsale/internal/pbb\x06proto3"
+	"\x14FindOrderItemByOrder\x12\x1c.pb.FindByIdOrderItemRequest\x1a\x19.pb.ApiResponsesOrderItemB8Z6github.com/MamangRust/monolith-point-of-sale-shared/pbb\x06proto3"
 
 var (
 	file_order_item_proto_rawDescOnce sync.Once

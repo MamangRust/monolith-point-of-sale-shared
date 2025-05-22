@@ -1411,7 +1411,7 @@ const file_product_proto_rawDesc = "" +
 	"\x0eRestoreProduct\x12\x1a.pb.FindByIdProductRequest\x1a\x1e.pb.ApiResponseProductDeleteAt\x12R\n" +
 	"\x16DeleteProductPermanent\x12\x1a.pb.FindByIdProductRequest\x1a\x1c.pb.ApiResponseProductDelete\x12H\n" +
 	"\x11RestoreAllProduct\x12\x16.google.protobuf.Empty\x1a\x19.pb.ApiResponseProductAll\"\x00\x12P\n" +
-	"\x19DeleteAllProductPermanent\x12\x16.google.protobuf.Empty\x1a\x19.pb.ApiResponseProductAll\"\x00B\x19Z\x17pointofsale/internal/pbb\x06proto3"
+	"\x19DeleteAllProductPermanent\x12\x16.google.protobuf.Empty\x1a\x19.pb.ApiResponseProductAll\"\x00B8Z6github.com/MamangRust/monolith-point-of-sale-shared/pbb\x06proto3"
 
 var (
 	file_product_proto_rawDescOnce sync.Once

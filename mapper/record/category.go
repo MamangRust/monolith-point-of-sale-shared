@@ -1,7 +1,7 @@
 package recordmapper
 
 import (
-	db "pointofsale/pkg/database/schema"
+	db "github.com/MamangRust/monolith-point-of-sale-pkg/database/schema"
 
 	"github.com/MamangRust/monolith-point-of-sale-shared/domain/record"
 )

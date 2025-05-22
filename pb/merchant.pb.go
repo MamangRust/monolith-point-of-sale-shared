@@ -1080,7 +1080,7 @@ const file_merchant_proto_rawDesc = "" +
 	"\x0fRestoreMerchant\x12\x1b.pb.FindByIdMerchantRequest\x1a\x1f.pb.ApiResponseMerchantDeleteAt\x12U\n" +
 	"\x17DeleteMerchantPermanent\x12\x1b.pb.FindByIdMerchantRequest\x1a\x1d.pb.ApiResponseMerchantDelete\x12J\n" +
 	"\x12RestoreAllMerchant\x12\x16.google.protobuf.Empty\x1a\x1a.pb.ApiResponseMerchantAll\"\x00\x12R\n" +
-	"\x1aDeleteAllMerchantPermanent\x12\x16.google.protobuf.Empty\x1a\x1a.pb.ApiResponseMerchantAll\"\x00B\x19Z\x17pointofsale/internal/pbb\x06proto3"
+	"\x1aDeleteAllMerchantPermanent\x12\x16.google.protobuf.Empty\x1a\x1a.pb.ApiResponseMerchantAll\"\x00B8Z6github.com/MamangRust/monolith-point-of-sale-shared/pbb\x06proto3"
 
 var (
 	file_merchant_proto_rawDescOnce sync.Once

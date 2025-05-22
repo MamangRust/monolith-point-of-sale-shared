@@ -2377,7 +2377,7 @@ const file_transaction_proto_rawDesc = "" +
 	"\x12RestoreTransaction\x12\x1e.pb.FindByIdTransactionRequest\x1a\".pb.ApiResponseTransactionDeleteAt\x12^\n" +
 	"\x1aDeleteTransactionPermanent\x12\x1e.pb.FindByIdTransactionRequest\x1a .pb.ApiResponseTransactionDelete\x12P\n" +
 	"\x15RestoreAllTransaction\x12\x16.google.protobuf.Empty\x1a\x1d.pb.ApiResponseTransactionAll\"\x00\x12X\n" +
-	"\x1dDeleteAllTransactionPermanent\x12\x16.google.protobuf.Empty\x1a\x1d.pb.ApiResponseTransactionAll\"\x00B\x19Z\x17pointofsale/internal/pbb\x06proto3"
+	"\x1dDeleteAllTransactionPermanent\x12\x16.google.protobuf.Empty\x1a\x1d.pb.ApiResponseTransactionAll\"\x00B8Z6github.com/MamangRust/monolith-point-of-sale-shared/pbb\x06proto3"
 
 var (
 	file_transaction_proto_rawDescOnce sync.Once

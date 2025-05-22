@@ -847,7 +847,7 @@ const file_role_proto_rawDesc = "" +
 	"\vRestoreRole\x12\x17.pb.FindByIdRoleRequest\x1a\x13.pb.ApiResponseRole\"\x00\x12K\n" +
 	"\x13DeleteRolePermanent\x12\x17.pb.FindByIdRoleRequest\x1a\x19.pb.ApiResponseRoleDelete\"\x00\x12B\n" +
 	"\x0eRestoreAllRole\x12\x16.google.protobuf.Empty\x1a\x16.pb.ApiResponseRoleAll\"\x00\x12J\n" +
-	"\x16DeleteAllRolePermanent\x12\x16.google.protobuf.Empty\x1a\x16.pb.ApiResponseRoleAll\"\x00B\x19Z\x17pointofsale/internal/pbb\x06proto3"
+	"\x16DeleteAllRolePermanent\x12\x16.google.protobuf.Empty\x1a\x16.pb.ApiResponseRoleAll\"\x00B8Z6github.com/MamangRust/monolith-point-of-sale-shared/pbb\x06proto3"
 
 var (
 	file_role_proto_rawDescOnce sync.Once

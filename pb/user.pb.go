@@ -971,7 +971,7 @@ const file_user_proto_rawDesc = "" +
 	"\vRestoreUser\x12\x17.pb.FindByIdUserRequest\x1a\x1b.pb.ApiResponseUserDeleteAt\x12I\n" +
 	"\x13DeleteUserPermanent\x12\x17.pb.FindByIdUserRequest\x1a\x19.pb.ApiResponseUserDelete\x12B\n" +
 	"\x0eRestoreAllUser\x12\x16.google.protobuf.Empty\x1a\x16.pb.ApiResponseUserAll\"\x00\x12J\n" +
-	"\x16DeleteAllUserPermanent\x12\x16.google.protobuf.Empty\x1a\x16.pb.ApiResponseUserAll\"\x00B\x19Z\x17pointofsale/internal/pbb\x06proto3"
+	"\x16DeleteAllUserPermanent\x12\x16.google.protobuf.Empty\x1a\x16.pb.ApiResponseUserAll\"\x00B8Z6github.com/MamangRust/monolith-point-of-sale-shared/pbb\x06proto3"
 
 var (
 	file_user_proto_rawDescOnce sync.Once

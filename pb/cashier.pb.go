@@ -2037,7 +2037,7 @@ const file_cashier_proto_rawDesc = "" +
 	"\x0eRestoreCashier\x12\x1a.pb.FindByIdCashierRequest\x1a\x1e.pb.ApiResponseCashierDeleteAt\"\x00\x12R\n" +
 	"\x16DeleteCashierPermanent\x12\x1a.pb.FindByIdCashierRequest\x1a\x1c.pb.ApiResponseCashierDelete\x12H\n" +
 	"\x11RestoreAllCashier\x12\x16.google.protobuf.Empty\x1a\x19.pb.ApiResponseCashierAll\"\x00\x12P\n" +
-	"\x19DeleteAllCashierPermanent\x12\x16.google.protobuf.Empty\x1a\x19.pb.ApiResponseCashierAll\"\x00B\x19Z\x17pointofsale/internal/pbb\x06proto3"
+	"\x19DeleteAllCashierPermanent\x12\x16.google.protobuf.Empty\x1a\x19.pb.ApiResponseCashierAll\"\x00B8Z6github.com/MamangRust/monolith-point-of-sale-shared/pbb\x06proto3"
 
 var (
 	file_cashier_proto_rawDescOnce sync.Once

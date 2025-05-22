@@ -163,7 +163,7 @@ const file_api_proto_rawDesc = "" +
 	"\rErrorResponse\x12\x16\n" +
 	"\x06status\x18\x01 \x01(\tR\x06status\x12\x18\n" +
 	"\amessage\x18\x02 \x01(\tR\amessage\x12\x12\n" +
-	"\x04code\x18\x03 \x01(\x05R\x04codeB\x19Z\x17pointofsale/internal/pbb\x06proto3"
+	"\x04code\x18\x03 \x01(\x05R\x04codeB8Z6github.com/MamangRust/monolith-point-of-sale-shared/pbb\x06proto3"
 
 var (
 	file_api_proto_rawDescOnce sync.Once

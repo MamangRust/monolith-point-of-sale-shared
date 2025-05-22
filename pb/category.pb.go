@@ -2020,7 +2020,7 @@ const file_category_proto_rawDesc = "" +
 	"\x0fRestoreCategory\x12\x1b.pb.FindByIdCategoryRequest\x1a\x1f.pb.ApiResponseCategoryDeleteAt\x12U\n" +
 	"\x17DeleteCategoryPermanent\x12\x1b.pb.FindByIdCategoryRequest\x1a\x1d.pb.ApiResponseCategoryDelete\x12J\n" +
 	"\x12RestoreAllCategory\x12\x16.google.protobuf.Empty\x1a\x1a.pb.ApiResponseCategoryAll\"\x00\x12R\n" +
-	"\x1aDeleteAllCategoryPermanent\x12\x16.google.protobuf.Empty\x1a\x1a.pb.ApiResponseCategoryAll\"\x00B\x19Z\x17pointofsale/internal/pbb\x06proto3"
+	"\x1aDeleteAllCategoryPermanent\x12\x16.google.protobuf.Empty\x1a\x1a.pb.ApiResponseCategoryAll\"\x00B8Z6github.com/MamangRust/monolith-point-of-sale-shared/pbb\x06proto3"
 
 var (
 	file_category_proto_rawDescOnce sync.Once

@@ -2170,7 +2170,7 @@ const file_order_proto_rawDesc = "" +
 	"\fRestoreOrder\x12\x18.pb.FindByIdOrderRequest\x1a\x1c.pb.ApiResponseOrderDeleteAt\x12L\n" +
 	"\x14DeleteOrderPermanent\x12\x18.pb.FindByIdOrderRequest\x1a\x1a.pb.ApiResponseOrderDelete\x12D\n" +
 	"\x0fRestoreAllOrder\x12\x16.google.protobuf.Empty\x1a\x17.pb.ApiResponseOrderAll\"\x00\x12L\n" +
-	"\x17DeleteAllOrderPermanent\x12\x16.google.protobuf.Empty\x1a\x17.pb.ApiResponseOrderAll\"\x00B\x19Z\x17pointofsale/internal/pbb\x06proto3"
+	"\x17DeleteAllOrderPermanent\x12\x16.google.protobuf.Empty\x1a\x17.pb.ApiResponseOrderAll\"\x00B8Z6github.com/MamangRust/monolith-point-of-sale-shared/pbb\x06proto3"
 
 var (
 	file_order_proto_rawDescOnce sync.Once
