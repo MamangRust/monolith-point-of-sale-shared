@@ -1124,7 +1124,7 @@ const file_merchant_proto_rawDesc = "" +
 	"\x04data\x18\x03 \x03(\v2\x14.pb.MerchantResponseR\x04data\x122\n" +
 	"\n" +
 	"pagination\x18\x04 \x01(\v2\x12.pb.PaginationMetaR\n" +
-	"pagination2\xb9\a\n" +
+	"pagination2\xb1\a\n" +
 	"\x0fMerchantService\x12H\n" +
 	"\aFindAll\x12\x1a.pb.FindAllMerchantRequest\x1a!.pb.ApiResponsePaginationMerchant\x12@\n" +
 	"\bFindById\x12\x1b.pb.FindByIdMerchantRequest\x1a\x17.pb.ApiResponseMerchant\x12W\n" +
@@ -1133,8 +1133,8 @@ const file_merchant_proto_rawDesc = "" +
 	"\x06Create\x12\x19.pb.CreateMerchantRequest\x1a\x17.pb.ApiResponseMerchant\x12<\n" +
 	"\x06Update\x12\x19.pb.UpdateMerchantRequest\x1a\x17.pb.ApiResponseMerchant\x12R\n" +
 	"\x14UpdateMerchantStatus\x12\x1f.pb.UpdateMerchantStatusRequest\x1a\x17.pb.ApiResponseMerchant\"\x00\x12O\n" +
-	"\x0fTrashedMerchant\x12\x1b.pb.FindByIdMerchantRequest\x1a\x1f.pb.ApiResponseMerchantDeleteAt\x12O\n" +
-	"\x0fRestoreMerchant\x12\x1b.pb.FindByIdMerchantRequest\x1a\x1f.pb.ApiResponseMerchantDeleteAt\x12U\n" +
+	"\x0fTrashedMerchant\x12\x1b.pb.FindByIdMerchantRequest\x1a\x1f.pb.ApiResponseMerchantDeleteAt\x12G\n" +
+	"\x0fRestoreMerchant\x12\x1b.pb.FindByIdMerchantRequest\x1a\x17.pb.ApiResponseMerchant\x12U\n" +
 	"\x17DeleteMerchantPermanent\x12\x1b.pb.FindByIdMerchantRequest\x1a\x1d.pb.ApiResponseMerchantDelete\x12J\n" +
 	"\x12RestoreAllMerchant\x12\x16.google.protobuf.Empty\x1a\x1a.pb.ApiResponseMerchantAll\"\x00\x12R\n" +
 	"\x1aDeleteAllMerchantPermanent\x12\x16.google.protobuf.Empty\x1a\x1a.pb.ApiResponseMerchantAll\"\x00B8Z6github.com/MamangRust/monolith-point-of-sale-shared/pbb\x06proto3"
@@ -1198,7 +1198,7 @@ var file_merchant_proto_depIdxs = []int32{
 	7,  // 24: pb.MerchantService.Update:output_type -> pb.ApiResponseMerchant
 	7,  // 25: pb.MerchantService.UpdateMerchantStatus:output_type -> pb.ApiResponseMerchant
 	8,  // 26: pb.MerchantService.TrashedMerchant:output_type -> pb.ApiResponseMerchantDeleteAt
-	8,  // 27: pb.MerchantService.RestoreMerchant:output_type -> pb.ApiResponseMerchantDeleteAt
+	7,  // 27: pb.MerchantService.RestoreMerchant:output_type -> pb.ApiResponseMerchant
 	10, // 28: pb.MerchantService.DeleteMerchantPermanent:output_type -> pb.ApiResponseMerchantDelete
 	11, // 29: pb.MerchantService.RestoreAllMerchant:output_type -> pb.ApiResponseMerchantAll
 	11, // 30: pb.MerchantService.DeleteAllMerchantPermanent:output_type -> pb.ApiResponseMerchantAll

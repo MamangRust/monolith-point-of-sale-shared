@@ -46,7 +46,7 @@ type MerchantServiceClient interface {
 	Update(ctx context.Context, in *UpdateMerchantRequest, opts ...grpc.CallOption) (*ApiResponseMerchant, error)
 	UpdateMerchantStatus(ctx context.Context, in *UpdateMerchantStatusRequest, opts ...grpc.CallOption) (*ApiResponseMerchant, error)
 	TrashedMerchant(ctx context.Context, in *FindByIdMerchantRequest, opts ...grpc.CallOption) (*ApiResponseMerchantDeleteAt, error)
-	RestoreMerchant(ctx context.Context, in *FindByIdMerchantRequest, opts ...grpc.CallOption) (*ApiResponseMerchantDeleteAt, error)
+	RestoreMerchant(ctx context.Context, in *FindByIdMerchantRequest, opts ...grpc.CallOption) (*ApiResponseMerchant, error)
 	DeleteMerchantPermanent(ctx context.Context, in *FindByIdMerchantRequest, opts ...grpc.CallOption) (*ApiResponseMerchantDelete, error)
 	RestoreAllMerchant(ctx context.Context, in *emptypb.Empty, opts ...grpc.CallOption) (*ApiResponseMerchantAll, error)
 	DeleteAllMerchantPermanent(ctx context.Context, in *emptypb.Empty, opts ...grpc.CallOption) (*ApiResponseMerchantAll, error)
@@ -140,9 +140,9 @@ func (c *merchantServiceClient) TrashedMerchant(ctx context.Context, in *FindByI
 	return out, nil
 }
 
-func (c *merchantServiceClient) RestoreMerchant(ctx context.Context, in *FindByIdMerchantRequest, opts ...grpc.CallOption) (*ApiResponseMerchantDeleteAt, error) {
+func (c *merchantServiceClient) RestoreMerchant(ctx context.Context, in *FindByIdMerchantRequest, opts ...grpc.CallOption) (*ApiResponseMerchant, error) {
 	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(ApiResponseMerchantDeleteAt)
+	out := new(ApiResponseMerchant)
 	err := c.cc.Invoke(ctx, MerchantService_RestoreMerchant_FullMethodName, in, out, cOpts...)
 	if err != nil {
 		return nil, err
@@ -192,7 +192,7 @@ type MerchantServiceServer interface {
 	Update(context.Context, *UpdateMerchantRequest) (*ApiResponseMerchant, error)
 	UpdateMerchantStatus(context.Context, *UpdateMerchantStatusRequest) (*ApiResponseMerchant, error)
 	TrashedMerchant(context.Context, *FindByIdMerchantRequest) (*ApiResponseMerchantDeleteAt, error)
-	RestoreMerchant(context.Context, *FindByIdMerchantRequest) (*ApiResponseMerchantDeleteAt, error)
+	RestoreMerchant(context.Context, *FindByIdMerchantRequest) (*ApiResponseMerchant, error)
 	DeleteMerchantPermanent(context.Context, *FindByIdMerchantRequest) (*ApiResponseMerchantDelete, error)
 	RestoreAllMerchant(context.Context, *emptypb.Empty) (*ApiResponseMerchantAll, error)
 	DeleteAllMerchantPermanent(context.Context, *emptypb.Empty) (*ApiResponseMerchantAll, error)
@@ -230,7 +230,7 @@ func (UnimplementedMerchantServiceServer) UpdateMerchantStatus(context.Context, 
 func (UnimplementedMerchantServiceServer) TrashedMerchant(context.Context, *FindByIdMerchantRequest) (*ApiResponseMerchantDeleteAt, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method TrashedMerchant not implemented")
 }
-func (UnimplementedMerchantServiceServer) RestoreMerchant(context.Context, *FindByIdMerchantRequest) (*ApiResponseMerchantDeleteAt, error) {
+func (UnimplementedMerchantServiceServer) RestoreMerchant(context.Context, *FindByIdMerchantRequest) (*ApiResponseMerchant, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method RestoreMerchant not implemented")
 }
 func (UnimplementedMerchantServiceServer) DeleteMerchantPermanent(context.Context, *FindByIdMerchantRequest) (*ApiResponseMerchantDelete, error) {
