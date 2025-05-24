@@ -11,6 +11,7 @@ type ResponseApiMapper struct {
 	OrderResponseMapper       OrderResponseMapper
 	ProductResponseMapper     ProductResponseMapper
 	TransactionResponseMapper TransactionResponseMapper
+	MerchantDocumentProMapper MerchantDocumentResponseMapper
 }
 
 func NewResponseApiMapper() *ResponseApiMapper {
@@ -25,5 +26,6 @@ func NewResponseApiMapper() *ResponseApiMapper {
 		OrderResponseMapper:       NewOrderResponseMapper(),
 		ProductResponseMapper:     NewProductResponseMapper(),
 		TransactionResponseMapper: NewTransactionResponseMapper(),
+		MerchantDocumentProMapper: NewMerchantDocumentResponseMapper(),
 	}
 }

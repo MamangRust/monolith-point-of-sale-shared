@@ -30,6 +30,10 @@ type RoleRecordMapping interface {
 	ToRolesRecordTrashed(roles []*db.GetTrashedRolesRow) []*record.RoleRecord
 }
 
+type ResetTokenRecordMapping interface {
+	ToResetTokenRecord(resetToken *db.ResetToken) *record.ResetTokenRecord
+}
+
 type UserRoleRecordMapping interface {
 	ToUserRoleRecord(userRole *db.UserRole) *record.UserRoleRecord
 }
@@ -129,6 +133,19 @@ type MerchantRecordMapping interface {
 	ToMerchantsRecordActivePagination(Merchants []*db.GetMerchantsActiveRow) []*record.MerchantRecord
 	ToMerchantRecordTrashedPagination(Merchant *db.GetMerchantsTrashedRow) *record.MerchantRecord
 	ToMerchantsRecordTrashedPagination(Merchants []*db.GetMerchantsTrashedRow) []*record.MerchantRecord
+}
+
+type MerchantDocumentMapping interface {
+	ToGetMerchantDocument(doc *db.MerchantDocument) *record.MerchantDocumentRecord
+
+	ToMerchantDocumentRecord(doc *db.GetMerchantDocumentsRow) *record.MerchantDocumentRecord
+	ToMerchantDocumentsRecord(docs []*db.GetMerchantDocumentsRow) []*record.MerchantDocumentRecord
+
+	ToMerchantDocumentActiveRecord(doc *db.GetActiveMerchantDocumentsRow) *record.MerchantDocumentRecord
+	ToMerchantDocumentsActiveRecord(docs []*db.GetActiveMerchantDocumentsRow) []*record.MerchantDocumentRecord
+
+	ToMerchantDocumentTrashedRecord(doc *db.GetTrashedMerchantDocumentsRow) *record.MerchantDocumentRecord
+	ToMerchantDocumentsTrashedRecord(docs []*db.GetTrashedMerchantDocumentsRow) []*record.MerchantDocumentRecord
 }
 
 type OrderItemRecordMapping interface {

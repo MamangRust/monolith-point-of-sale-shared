@@ -36,12 +36,20 @@ var (
 		return response.NewApiErrorResponse(c, "error", "failed to update merchant", http.StatusInternalServerError)
 	}
 
+	ErrApiMerchantFailedUpdateStatus = func(c echo.Context) error {
+		return response.NewApiErrorResponse(c, "error", "failed to update merchant status", http.StatusInternalServerError)
+	}
+
 	ErrApiValidateCreateMerchant = func(c echo.Context) error {
 		return response.NewApiErrorResponse(c, "error", "validation failed: invalid create bank request", http.StatusBadRequest)
 	}
 
 	ErrApiValidateUpdateMerchant = func(c echo.Context) error {
 		return response.NewApiErrorResponse(c, "error", "validation failed: invalid update bank request", http.StatusBadRequest)
+	}
+
+	ErrApiBindUpdateMerchantStatus = func(c echo.Context) error {
+		return response.NewApiErrorResponse(c, "error", "bind failed: invalid update merchant status request", http.StatusBadRequest)
 	}
 
 	ErrApiBindCreateMerchant = func(c echo.Context) error {

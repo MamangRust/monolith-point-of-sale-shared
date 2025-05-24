@@ -18,4 +18,6 @@ var (
 	ErrFailedDeleteMerchantPermanent     = response.NewErrorResponse("Failed to permanently delete merchant", http.StatusInternalServerError)
 	ErrFailedRestoreAllMerchants         = response.NewErrorResponse("Failed to restore all merchants", http.StatusInternalServerError)
 	ErrFailedDeleteAllMerchantsPermanent = response.NewErrorResponse("Failed to permanently delete all merchants", http.StatusInternalServerError)
+
+	ErrFailedSendEmail = response.NewErrorResponse("Failed to send email", http.StatusInternalServerError)
 )

@@ -67,6 +67,14 @@ type MerchantResponseMapper interface {
 	ToMerchantsResponseDeleteAt(merchants []*record.MerchantRecord) []*response.MerchantResponseDeleteAt
 }
 
+type MerchantDocumentResponseMapper interface {
+	ToMerchantDocumentResponse(doc *record.MerchantDocumentRecord) *response.MerchantDocumentResponse
+	ToMerchantDocumentsResponse(docs []*record.MerchantDocumentRecord) []*response.MerchantDocumentResponse
+
+	ToMerchantDocumentResponseDeleteAt(doc *record.MerchantDocumentRecord) *response.MerchantDocumentResponseDeleteAt
+	ToMerchantDocumentsResponseDeleteAt(docs []*record.MerchantDocumentRecord) []*response.MerchantDocumentResponseDeleteAt
+}
+
 type OrderResponseMapper interface {
 	ToOrderMonthlyTotalRevenue(c *record.OrderMonthlyTotalRevenueRecord) *response.OrderMonthlyTotalRevenueResponse
 	ToOrderMonthlyTotalRevenues(c []*record.OrderMonthlyTotalRevenueRecord) []*response.OrderMonthlyTotalRevenueResponse
