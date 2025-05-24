@@ -318,6 +318,58 @@ func (x *UpdateMerchantRequest) GetStatus() string {
 	return ""
 }
 
+type UpdateMerchantStatusRequest struct {
+	state         protoimpl.MessageState `protogen:"open.v1"`
+	MerchantId    int32                  `protobuf:"varint,1,opt,name=merchant_id,json=merchantId,proto3" json:"merchant_id,omitempty"`
+	Status        string                 `protobuf:"bytes,2,opt,name=status,proto3" json:"status,omitempty"`
+	unknownFields protoimpl.UnknownFields
+	sizeCache     protoimpl.SizeCache
+}
+
+func (x *UpdateMerchantStatusRequest) Reset() {
+	*x = UpdateMerchantStatusRequest{}
+	mi := &file_merchant_proto_msgTypes[4]
+	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+	ms.StoreMessageInfo(mi)
+}
+
+func (x *UpdateMerchantStatusRequest) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*UpdateMerchantStatusRequest) ProtoMessage() {}
+
+func (x *UpdateMerchantStatusRequest) ProtoReflect() protoreflect.Message {
+	mi := &file_merchant_proto_msgTypes[4]
+	if x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use UpdateMerchantStatusRequest.ProtoReflect.Descriptor instead.
+func (*UpdateMerchantStatusRequest) Descriptor() ([]byte, []int) {
+	return file_merchant_proto_rawDescGZIP(), []int{4}
+}
+
+func (x *UpdateMerchantStatusRequest) GetMerchantId() int32 {
+	if x != nil {
+		return x.MerchantId
+	}
+	return 0
+}
+
+func (x *UpdateMerchantStatusRequest) GetStatus() string {
+	if x != nil {
+		return x.Status
+	}
+	return ""
+}
+
 type MerchantResponse struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
 	Id            int32                  `protobuf:"varint,1,opt,name=id,proto3" json:"id,omitempty"`
@@ -336,7 +388,7 @@ type MerchantResponse struct {
 
 func (x *MerchantResponse) Reset() {
 	*x = MerchantResponse{}
-	mi := &file_merchant_proto_msgTypes[4]
+	mi := &file_merchant_proto_msgTypes[5]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -348,7 +400,7 @@ func (x *MerchantResponse) String() string {
 func (*MerchantResponse) ProtoMessage() {}
 
 func (x *MerchantResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_merchant_proto_msgTypes[4]
+	mi := &file_merchant_proto_msgTypes[5]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -361,7 +413,7 @@ func (x *MerchantResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MerchantResponse.ProtoReflect.Descriptor instead.
 func (*MerchantResponse) Descriptor() ([]byte, []int) {
-	return file_merchant_proto_rawDescGZIP(), []int{4}
+	return file_merchant_proto_rawDescGZIP(), []int{5}
 }
 
 func (x *MerchantResponse) GetId() int32 {
@@ -453,7 +505,7 @@ type MerchantResponseDeleteAt struct {
 
 func (x *MerchantResponseDeleteAt) Reset() {
 	*x = MerchantResponseDeleteAt{}
-	mi := &file_merchant_proto_msgTypes[5]
+	mi := &file_merchant_proto_msgTypes[6]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -465,7 +517,7 @@ func (x *MerchantResponseDeleteAt) String() string {
 func (*MerchantResponseDeleteAt) ProtoMessage() {}
 
 func (x *MerchantResponseDeleteAt) ProtoReflect() protoreflect.Message {
-	mi := &file_merchant_proto_msgTypes[5]
+	mi := &file_merchant_proto_msgTypes[6]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -478,7 +530,7 @@ func (x *MerchantResponseDeleteAt) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MerchantResponseDeleteAt.ProtoReflect.Descriptor instead.
 func (*MerchantResponseDeleteAt) Descriptor() ([]byte, []int) {
-	return file_merchant_proto_rawDescGZIP(), []int{5}
+	return file_merchant_proto_rawDescGZIP(), []int{6}
 }
 
 func (x *MerchantResponseDeleteAt) GetId() int32 {
@@ -569,7 +621,7 @@ type ApiResponseMerchant struct {
 
 func (x *ApiResponseMerchant) Reset() {
 	*x = ApiResponseMerchant{}
-	mi := &file_merchant_proto_msgTypes[6]
+	mi := &file_merchant_proto_msgTypes[7]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -581,7 +633,7 @@ func (x *ApiResponseMerchant) String() string {
 func (*ApiResponseMerchant) ProtoMessage() {}
 
 func (x *ApiResponseMerchant) ProtoReflect() protoreflect.Message {
-	mi := &file_merchant_proto_msgTypes[6]
+	mi := &file_merchant_proto_msgTypes[7]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -594,7 +646,7 @@ func (x *ApiResponseMerchant) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ApiResponseMerchant.ProtoReflect.Descriptor instead.
 func (*ApiResponseMerchant) Descriptor() ([]byte, []int) {
-	return file_merchant_proto_rawDescGZIP(), []int{6}
+	return file_merchant_proto_rawDescGZIP(), []int{7}
 }
 
 func (x *ApiResponseMerchant) GetStatus() string {
@@ -629,7 +681,7 @@ type ApiResponseMerchantDeleteAt struct {
 
 func (x *ApiResponseMerchantDeleteAt) Reset() {
 	*x = ApiResponseMerchantDeleteAt{}
-	mi := &file_merchant_proto_msgTypes[7]
+	mi := &file_merchant_proto_msgTypes[8]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -641,7 +693,7 @@ func (x *ApiResponseMerchantDeleteAt) String() string {
 func (*ApiResponseMerchantDeleteAt) ProtoMessage() {}
 
 func (x *ApiResponseMerchantDeleteAt) ProtoReflect() protoreflect.Message {
-	mi := &file_merchant_proto_msgTypes[7]
+	mi := &file_merchant_proto_msgTypes[8]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -654,7 +706,7 @@ func (x *ApiResponseMerchantDeleteAt) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ApiResponseMerchantDeleteAt.ProtoReflect.Descriptor instead.
 func (*ApiResponseMerchantDeleteAt) Descriptor() ([]byte, []int) {
-	return file_merchant_proto_rawDescGZIP(), []int{7}
+	return file_merchant_proto_rawDescGZIP(), []int{8}
 }
 
 func (x *ApiResponseMerchantDeleteAt) GetStatus() string {
@@ -689,7 +741,7 @@ type ApiResponsesMerchant struct {
 
 func (x *ApiResponsesMerchant) Reset() {
 	*x = ApiResponsesMerchant{}
-	mi := &file_merchant_proto_msgTypes[8]
+	mi := &file_merchant_proto_msgTypes[9]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -701,7 +753,7 @@ func (x *ApiResponsesMerchant) String() string {
 func (*ApiResponsesMerchant) ProtoMessage() {}
 
 func (x *ApiResponsesMerchant) ProtoReflect() protoreflect.Message {
-	mi := &file_merchant_proto_msgTypes[8]
+	mi := &file_merchant_proto_msgTypes[9]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -714,7 +766,7 @@ func (x *ApiResponsesMerchant) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ApiResponsesMerchant.ProtoReflect.Descriptor instead.
 func (*ApiResponsesMerchant) Descriptor() ([]byte, []int) {
-	return file_merchant_proto_rawDescGZIP(), []int{8}
+	return file_merchant_proto_rawDescGZIP(), []int{9}
 }
 
 func (x *ApiResponsesMerchant) GetStatus() string {
@@ -748,7 +800,7 @@ type ApiResponseMerchantDelete struct {
 
 func (x *ApiResponseMerchantDelete) Reset() {
 	*x = ApiResponseMerchantDelete{}
-	mi := &file_merchant_proto_msgTypes[9]
+	mi := &file_merchant_proto_msgTypes[10]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -760,7 +812,7 @@ func (x *ApiResponseMerchantDelete) String() string {
 func (*ApiResponseMerchantDelete) ProtoMessage() {}
 
 func (x *ApiResponseMerchantDelete) ProtoReflect() protoreflect.Message {
-	mi := &file_merchant_proto_msgTypes[9]
+	mi := &file_merchant_proto_msgTypes[10]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -773,7 +825,7 @@ func (x *ApiResponseMerchantDelete) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ApiResponseMerchantDelete.ProtoReflect.Descriptor instead.
 func (*ApiResponseMerchantDelete) Descriptor() ([]byte, []int) {
-	return file_merchant_proto_rawDescGZIP(), []int{9}
+	return file_merchant_proto_rawDescGZIP(), []int{10}
 }
 
 func (x *ApiResponseMerchantDelete) GetStatus() string {
@@ -800,7 +852,7 @@ type ApiResponseMerchantAll struct {
 
 func (x *ApiResponseMerchantAll) Reset() {
 	*x = ApiResponseMerchantAll{}
-	mi := &file_merchant_proto_msgTypes[10]
+	mi := &file_merchant_proto_msgTypes[11]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -812,7 +864,7 @@ func (x *ApiResponseMerchantAll) String() string {
 func (*ApiResponseMerchantAll) ProtoMessage() {}
 
 func (x *ApiResponseMerchantAll) ProtoReflect() protoreflect.Message {
-	mi := &file_merchant_proto_msgTypes[10]
+	mi := &file_merchant_proto_msgTypes[11]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -825,7 +877,7 @@ func (x *ApiResponseMerchantAll) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ApiResponseMerchantAll.ProtoReflect.Descriptor instead.
 func (*ApiResponseMerchantAll) Descriptor() ([]byte, []int) {
-	return file_merchant_proto_rawDescGZIP(), []int{10}
+	return file_merchant_proto_rawDescGZIP(), []int{11}
 }
 
 func (x *ApiResponseMerchantAll) GetStatus() string {
@@ -854,7 +906,7 @@ type ApiResponsePaginationMerchantDeleteAt struct {
 
 func (x *ApiResponsePaginationMerchantDeleteAt) Reset() {
 	*x = ApiResponsePaginationMerchantDeleteAt{}
-	mi := &file_merchant_proto_msgTypes[11]
+	mi := &file_merchant_proto_msgTypes[12]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -866,7 +918,7 @@ func (x *ApiResponsePaginationMerchantDeleteAt) String() string {
 func (*ApiResponsePaginationMerchantDeleteAt) ProtoMessage() {}
 
 func (x *ApiResponsePaginationMerchantDeleteAt) ProtoReflect() protoreflect.Message {
-	mi := &file_merchant_proto_msgTypes[11]
+	mi := &file_merchant_proto_msgTypes[12]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -879,7 +931,7 @@ func (x *ApiResponsePaginationMerchantDeleteAt) ProtoReflect() protoreflect.Mess
 
 // Deprecated: Use ApiResponsePaginationMerchantDeleteAt.ProtoReflect.Descriptor instead.
 func (*ApiResponsePaginationMerchantDeleteAt) Descriptor() ([]byte, []int) {
-	return file_merchant_proto_rawDescGZIP(), []int{11}
+	return file_merchant_proto_rawDescGZIP(), []int{12}
 }
 
 func (x *ApiResponsePaginationMerchantDeleteAt) GetStatus() string {
@@ -922,7 +974,7 @@ type ApiResponsePaginationMerchant struct {
 
 func (x *ApiResponsePaginationMerchant) Reset() {
 	*x = ApiResponsePaginationMerchant{}
-	mi := &file_merchant_proto_msgTypes[12]
+	mi := &file_merchant_proto_msgTypes[13]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -934,7 +986,7 @@ func (x *ApiResponsePaginationMerchant) String() string {
 func (*ApiResponsePaginationMerchant) ProtoMessage() {}
 
 func (x *ApiResponsePaginationMerchant) ProtoReflect() protoreflect.Message {
-	mi := &file_merchant_proto_msgTypes[12]
+	mi := &file_merchant_proto_msgTypes[13]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -947,7 +999,7 @@ func (x *ApiResponsePaginationMerchant) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ApiResponsePaginationMerchant.ProtoReflect.Descriptor instead.
 func (*ApiResponsePaginationMerchant) Descriptor() ([]byte, []int) {
-	return file_merchant_proto_rawDescGZIP(), []int{12}
+	return file_merchant_proto_rawDescGZIP(), []int{13}
 }
 
 func (x *ApiResponsePaginationMerchant) GetStatus() string {
@@ -1006,7 +1058,11 @@ const file_merchant_proto_rawDesc = "" +
 	"\aaddress\x18\x05 \x01(\tR\aaddress\x12#\n" +
 	"\rcontact_email\x18\x06 \x01(\tR\fcontactEmail\x12#\n" +
 	"\rcontact_phone\x18\a \x01(\tR\fcontactPhone\x12\x16\n" +
-	"\x06status\x18\b \x01(\tR\x06status\"\xab\x02\n" +
+	"\x06status\x18\b \x01(\tR\x06status\"V\n" +
+	"\x1bUpdateMerchantStatusRequest\x12\x1f\n" +
+	"\vmerchant_id\x18\x01 \x01(\x05R\n" +
+	"merchantId\x12\x16\n" +
+	"\x06status\x18\x02 \x01(\tR\x06status\"\xab\x02\n" +
 	"\x10MerchantResponse\x12\x0e\n" +
 	"\x02id\x18\x01 \x01(\x05R\x02id\x12\x17\n" +
 	"\auser_id\x18\x02 \x01(\x05R\x06userId\x12\x12\n" +
@@ -1068,14 +1124,15 @@ const file_merchant_proto_rawDesc = "" +
 	"\x04data\x18\x03 \x03(\v2\x14.pb.MerchantResponseR\x04data\x122\n" +
 	"\n" +
 	"pagination\x18\x04 \x01(\v2\x12.pb.PaginationMetaR\n" +
-	"pagination2\xe5\x06\n" +
+	"pagination2\xb9\a\n" +
 	"\x0fMerchantService\x12H\n" +
 	"\aFindAll\x12\x1a.pb.FindAllMerchantRequest\x1a!.pb.ApiResponsePaginationMerchant\x12@\n" +
 	"\bFindById\x12\x1b.pb.FindByIdMerchantRequest\x1a\x17.pb.ApiResponseMerchant\x12W\n" +
 	"\fFindByActive\x12\x1a.pb.FindAllMerchantRequest\x1a).pb.ApiResponsePaginationMerchantDeleteAt\"\x00\x12X\n" +
 	"\rFindByTrashed\x12\x1a.pb.FindAllMerchantRequest\x1a).pb.ApiResponsePaginationMerchantDeleteAt\"\x00\x12<\n" +
 	"\x06Create\x12\x19.pb.CreateMerchantRequest\x1a\x17.pb.ApiResponseMerchant\x12<\n" +
-	"\x06Update\x12\x19.pb.UpdateMerchantRequest\x1a\x17.pb.ApiResponseMerchant\x12O\n" +
+	"\x06Update\x12\x19.pb.UpdateMerchantRequest\x1a\x17.pb.ApiResponseMerchant\x12R\n" +
+	"\x14UpdateMerchantStatus\x12\x1f.pb.UpdateMerchantStatusRequest\x1a\x17.pb.ApiResponseMerchant\"\x00\x12O\n" +
 	"\x0fTrashedMerchant\x12\x1b.pb.FindByIdMerchantRequest\x1a\x1f.pb.ApiResponseMerchantDeleteAt\x12O\n" +
 	"\x0fRestoreMerchant\x12\x1b.pb.FindByIdMerchantRequest\x1a\x1f.pb.ApiResponseMerchantDeleteAt\x12U\n" +
 	"\x17DeleteMerchantPermanent\x12\x1b.pb.FindByIdMerchantRequest\x1a\x1d.pb.ApiResponseMerchantDelete\x12J\n" +
@@ -1094,56 +1151,59 @@ func file_merchant_proto_rawDescGZIP() []byte {
 	return file_merchant_proto_rawDescData
 }
 
-var file_merchant_proto_msgTypes = make([]protoimpl.MessageInfo, 13)
+var file_merchant_proto_msgTypes = make([]protoimpl.MessageInfo, 14)
 var file_merchant_proto_goTypes = []any{
 	(*FindAllMerchantRequest)(nil),                // 0: pb.FindAllMerchantRequest
 	(*FindByIdMerchantRequest)(nil),               // 1: pb.FindByIdMerchantRequest
 	(*CreateMerchantRequest)(nil),                 // 2: pb.CreateMerchantRequest
 	(*UpdateMerchantRequest)(nil),                 // 3: pb.UpdateMerchantRequest
-	(*MerchantResponse)(nil),                      // 4: pb.MerchantResponse
-	(*MerchantResponseDeleteAt)(nil),              // 5: pb.MerchantResponseDeleteAt
-	(*ApiResponseMerchant)(nil),                   // 6: pb.ApiResponseMerchant
-	(*ApiResponseMerchantDeleteAt)(nil),           // 7: pb.ApiResponseMerchantDeleteAt
-	(*ApiResponsesMerchant)(nil),                  // 8: pb.ApiResponsesMerchant
-	(*ApiResponseMerchantDelete)(nil),             // 9: pb.ApiResponseMerchantDelete
-	(*ApiResponseMerchantAll)(nil),                // 10: pb.ApiResponseMerchantAll
-	(*ApiResponsePaginationMerchantDeleteAt)(nil), // 11: pb.ApiResponsePaginationMerchantDeleteAt
-	(*ApiResponsePaginationMerchant)(nil),         // 12: pb.ApiResponsePaginationMerchant
-	(*PaginationMeta)(nil),                        // 13: pb.PaginationMeta
-	(*emptypb.Empty)(nil),                         // 14: google.protobuf.Empty
+	(*UpdateMerchantStatusRequest)(nil),           // 4: pb.UpdateMerchantStatusRequest
+	(*MerchantResponse)(nil),                      // 5: pb.MerchantResponse
+	(*MerchantResponseDeleteAt)(nil),              // 6: pb.MerchantResponseDeleteAt
+	(*ApiResponseMerchant)(nil),                   // 7: pb.ApiResponseMerchant
+	(*ApiResponseMerchantDeleteAt)(nil),           // 8: pb.ApiResponseMerchantDeleteAt
+	(*ApiResponsesMerchant)(nil),                  // 9: pb.ApiResponsesMerchant
+	(*ApiResponseMerchantDelete)(nil),             // 10: pb.ApiResponseMerchantDelete
+	(*ApiResponseMerchantAll)(nil),                // 11: pb.ApiResponseMerchantAll
+	(*ApiResponsePaginationMerchantDeleteAt)(nil), // 12: pb.ApiResponsePaginationMerchantDeleteAt
+	(*ApiResponsePaginationMerchant)(nil),         // 13: pb.ApiResponsePaginationMerchant
+	(*PaginationMeta)(nil),                        // 14: pb.PaginationMeta
+	(*emptypb.Empty)(nil),                         // 15: google.protobuf.Empty
 }
 var file_merchant_proto_depIdxs = []int32{
-	4,  // 0: pb.ApiResponseMerchant.data:type_name -> pb.MerchantResponse
-	5,  // 1: pb.ApiResponseMerchantDeleteAt.data:type_name -> pb.MerchantResponseDeleteAt
-	4,  // 2: pb.ApiResponsesMerchant.data:type_name -> pb.MerchantResponse
-	5,  // 3: pb.ApiResponsePaginationMerchantDeleteAt.data:type_name -> pb.MerchantResponseDeleteAt
-	13, // 4: pb.ApiResponsePaginationMerchantDeleteAt.pagination:type_name -> pb.PaginationMeta
-	4,  // 5: pb.ApiResponsePaginationMerchant.data:type_name -> pb.MerchantResponse
-	13, // 6: pb.ApiResponsePaginationMerchant.pagination:type_name -> pb.PaginationMeta
+	5,  // 0: pb.ApiResponseMerchant.data:type_name -> pb.MerchantResponse
+	6,  // 1: pb.ApiResponseMerchantDeleteAt.data:type_name -> pb.MerchantResponseDeleteAt
+	5,  // 2: pb.ApiResponsesMerchant.data:type_name -> pb.MerchantResponse
+	6,  // 3: pb.ApiResponsePaginationMerchantDeleteAt.data:type_name -> pb.MerchantResponseDeleteAt
+	14, // 4: pb.ApiResponsePaginationMerchantDeleteAt.pagination:type_name -> pb.PaginationMeta
+	5,  // 5: pb.ApiResponsePaginationMerchant.data:type_name -> pb.MerchantResponse
+	14, // 6: pb.ApiResponsePaginationMerchant.pagination:type_name -> pb.PaginationMeta
 	0,  // 7: pb.MerchantService.FindAll:input_type -> pb.FindAllMerchantRequest
 	1,  // 8: pb.MerchantService.FindById:input_type -> pb.FindByIdMerchantRequest
 	0,  // 9: pb.MerchantService.FindByActive:input_type -> pb.FindAllMerchantRequest
 	0,  // 10: pb.MerchantService.FindByTrashed:input_type -> pb.FindAllMerchantRequest
 	2,  // 11: pb.MerchantService.Create:input_type -> pb.CreateMerchantRequest
 	3,  // 12: pb.MerchantService.Update:input_type -> pb.UpdateMerchantRequest
-	1,  // 13: pb.MerchantService.TrashedMerchant:input_type -> pb.FindByIdMerchantRequest
-	1,  // 14: pb.MerchantService.RestoreMerchant:input_type -> pb.FindByIdMerchantRequest
-	1,  // 15: pb.MerchantService.DeleteMerchantPermanent:input_type -> pb.FindByIdMerchantRequest
-	14, // 16: pb.MerchantService.RestoreAllMerchant:input_type -> google.protobuf.Empty
-	14, // 17: pb.MerchantService.DeleteAllMerchantPermanent:input_type -> google.protobuf.Empty
-	12, // 18: pb.MerchantService.FindAll:output_type -> pb.ApiResponsePaginationMerchant
-	6,  // 19: pb.MerchantService.FindById:output_type -> pb.ApiResponseMerchant
-	11, // 20: pb.MerchantService.FindByActive:output_type -> pb.ApiResponsePaginationMerchantDeleteAt
-	11, // 21: pb.MerchantService.FindByTrashed:output_type -> pb.ApiResponsePaginationMerchantDeleteAt
-	6,  // 22: pb.MerchantService.Create:output_type -> pb.ApiResponseMerchant
-	6,  // 23: pb.MerchantService.Update:output_type -> pb.ApiResponseMerchant
-	7,  // 24: pb.MerchantService.TrashedMerchant:output_type -> pb.ApiResponseMerchantDeleteAt
-	7,  // 25: pb.MerchantService.RestoreMerchant:output_type -> pb.ApiResponseMerchantDeleteAt
-	9,  // 26: pb.MerchantService.DeleteMerchantPermanent:output_type -> pb.ApiResponseMerchantDelete
-	10, // 27: pb.MerchantService.RestoreAllMerchant:output_type -> pb.ApiResponseMerchantAll
-	10, // 28: pb.MerchantService.DeleteAllMerchantPermanent:output_type -> pb.ApiResponseMerchantAll
-	18, // [18:29] is the sub-list for method output_type
-	7,  // [7:18] is the sub-list for method input_type
+	4,  // 13: pb.MerchantService.UpdateMerchantStatus:input_type -> pb.UpdateMerchantStatusRequest
+	1,  // 14: pb.MerchantService.TrashedMerchant:input_type -> pb.FindByIdMerchantRequest
+	1,  // 15: pb.MerchantService.RestoreMerchant:input_type -> pb.FindByIdMerchantRequest
+	1,  // 16: pb.MerchantService.DeleteMerchantPermanent:input_type -> pb.FindByIdMerchantRequest
+	15, // 17: pb.MerchantService.RestoreAllMerchant:input_type -> google.protobuf.Empty
+	15, // 18: pb.MerchantService.DeleteAllMerchantPermanent:input_type -> google.protobuf.Empty
+	13, // 19: pb.MerchantService.FindAll:output_type -> pb.ApiResponsePaginationMerchant
+	7,  // 20: pb.MerchantService.FindById:output_type -> pb.ApiResponseMerchant
+	12, // 21: pb.MerchantService.FindByActive:output_type -> pb.ApiResponsePaginationMerchantDeleteAt
+	12, // 22: pb.MerchantService.FindByTrashed:output_type -> pb.ApiResponsePaginationMerchantDeleteAt
+	7,  // 23: pb.MerchantService.Create:output_type -> pb.ApiResponseMerchant
+	7,  // 24: pb.MerchantService.Update:output_type -> pb.ApiResponseMerchant
+	7,  // 25: pb.MerchantService.UpdateMerchantStatus:output_type -> pb.ApiResponseMerchant
+	8,  // 26: pb.MerchantService.TrashedMerchant:output_type -> pb.ApiResponseMerchantDeleteAt
+	8,  // 27: pb.MerchantService.RestoreMerchant:output_type -> pb.ApiResponseMerchantDeleteAt
+	10, // 28: pb.MerchantService.DeleteMerchantPermanent:output_type -> pb.ApiResponseMerchantDelete
+	11, // 29: pb.MerchantService.RestoreAllMerchant:output_type -> pb.ApiResponseMerchantAll
+	11, // 30: pb.MerchantService.DeleteAllMerchantPermanent:output_type -> pb.ApiResponseMerchantAll
+	19, // [19:31] is the sub-list for method output_type
+	7,  // [7:19] is the sub-list for method input_type
 	7,  // [7:7] is the sub-list for extension type_name
 	7,  // [7:7] is the sub-list for extension extendee
 	0,  // [0:7] is the sub-list for field type_name
@@ -1161,7 +1221,7 @@ func file_merchant_proto_init() {
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
 			RawDescriptor: unsafe.Slice(unsafe.StringData(file_merchant_proto_rawDesc), len(file_merchant_proto_rawDesc)),
 			NumEnums:      0,
-			NumMessages:   13,
+			NumMessages:   14,
 			NumExtensions: 0,
 			NumServices:   1,
 		},
