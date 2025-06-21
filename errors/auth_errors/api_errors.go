@@ -9,6 +9,18 @@ import (
 )
 
 var (
+	ErrApiVerifyCode = func(c echo.Context) error {
+		return response.NewApiErrorResponse(c, "error", "failed to verify code", http.StatusBadRequest)
+	}
+
+	ErrApiForgotPassword = func(c echo.Context) error {
+		return response.NewApiErrorResponse(c, "error", "failed to forgot password", http.StatusBadRequest)
+	}
+
+	ErrApiResetPassword = func(c echo.Context) error {
+		return response.NewApiErrorResponse(c, "error", "failed to reset password", http.StatusBadRequest)
+	}
+
 	ErrApiLogin = func(c echo.Context) error {
 		return response.NewApiErrorResponse(c, "error", "login failed: invalid argument provided", http.StatusBadRequest)
 	}

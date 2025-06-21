@@ -12,6 +12,27 @@ func NewAuthProtoMapper() *authProtoMapper {
 	return &authProtoMapper{}
 }
 
+func (s *authProtoMapper) ToProtoResponseVerifyCode(status string, message string) *pb.ApiResponseVerifyCode {
+	return &pb.ApiResponseVerifyCode{
+		Status:  status,
+		Message: message,
+	}
+}
+
+func (s *authProtoMapper) ToProtoResponseForgotPassword(status string, message string) *pb.ApiResponseForgotPassword {
+	return &pb.ApiResponseForgotPassword{
+		Status:  status,
+		Message: message,
+	}
+}
+
+func (s *authProtoMapper) ToProtoResponseResetPassword(status string, message string) *pb.ApiResponseResetPassword {
+	return &pb.ApiResponseResetPassword{
+		Status:  status,
+		Message: message,
+	}
+}
+
 func (s *authProtoMapper) ToProtoResponseLogin(status string, message string, response *response.TokenResponse) *pb.ApiResponseLogin {
 	return &pb.ApiResponseLogin{
 		Status:  status,

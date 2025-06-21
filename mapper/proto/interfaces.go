@@ -6,6 +6,9 @@ import (
 )
 
 type AuthProtoMapper interface {
+	ToProtoResponseVerifyCode(status string, message string) *pb.ApiResponseVerifyCode
+	ToProtoResponseForgotPassword(status string, message string) *pb.ApiResponseForgotPassword
+	ToProtoResponseResetPassword(status string, message string) *pb.ApiResponseResetPassword
 	ToProtoResponseLogin(status string, message string, response *response.TokenResponse) *pb.ApiResponseLogin
 	ToProtoResponseRegister(status string, message string, response *response.UserResponse) *pb.ApiResponseRegister
 	ToProtoResponseRefreshToken(status string, message string, response *response.TokenResponse) *pb.ApiResponseRefreshToken

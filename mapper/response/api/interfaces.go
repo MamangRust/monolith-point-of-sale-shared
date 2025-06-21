@@ -6,6 +6,9 @@ import (
 )
 
 type AuthResponseMapper interface {
+	ToResponseVerifyCode(res *pb.ApiResponseVerifyCode) *response.ApiResponseVerifyCode
+	ToResponseForgotPassword(res *pb.ApiResponseForgotPassword) *response.ApiResponseForgotPassword
+	ToResponseResetPassword(res *pb.ApiResponseResetPassword) *response.ApiResponseResetPassword
 	ToResponseLogin(res *pb.ApiResponseLogin) *response.ApiResponseLogin
 	ToResponseRegister(res *pb.ApiResponseRegister) *response.ApiResponseRegister
 	ToResponseRefreshToken(res *pb.ApiResponseRefreshToken) *response.ApiResponseRefreshToken

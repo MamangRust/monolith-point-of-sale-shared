@@ -5,6 +5,21 @@ type TokenResponse struct {
 	RefreshToken string `json:"refresh_token"`
 }
 
+type ApiResponseVerifyCode struct {
+	Status  string `json:"status"`
+	Message string `json:"messsage"`
+}
+
+type ApiResponseForgotPassword struct {
+	Status  string `json:"status"`
+	Message string `json:"messsage"`
+}
+
+type ApiResponseResetPassword struct {
+	Status  string `json:"status"`
+	Message string `json:"messsage"`
+}
+
 type ApiResponseLogin struct {
 	Status  string         `json:"status"`
 	Message string         `json:"messsage"`

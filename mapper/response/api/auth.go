@@ -12,6 +12,27 @@ func NewAuthResponseMapper() *authResponseMapper {
 	return &authResponseMapper{}
 }
 
+func (s *authResponseMapper) ToResponseVerifyCode(res *pb.ApiResponseVerifyCode) *response.ApiResponseVerifyCode {
+	return &response.ApiResponseVerifyCode{
+		Status:  res.Status,
+		Message: res.Message,
+	}
+}
+
+func (s *authResponseMapper) ToResponseForgotPassword(res *pb.ApiResponseForgotPassword) *response.ApiResponseForgotPassword {
+	return &response.ApiResponseForgotPassword{
+		Status:  res.Status,
+		Message: res.Message,
+	}
+}
+
+func (s *authResponseMapper) ToResponseResetPassword(res *pb.ApiResponseResetPassword) *response.ApiResponseResetPassword {
+	return &response.ApiResponseResetPassword{
+		Status:  res.Status,
+		Message: res.Message,
+	}
+}
+
 func (s *authResponseMapper) ToResponseLogin(res *pb.ApiResponseLogin) *response.ApiResponseLogin {
 	defaultErrorResponse := &response.ApiResponseLogin{
 		Status:  "error",
