@@ -7,6 +7,8 @@ import (
 )
 
 var (
+	ErrFailedCountStock = response.NewErrorResponse("Failed to count stock", http.StatusInternalServerError)
+
 	ErrFailedDeletingNotFoundProduct = response.NewErrorResponse("Product not found", http.StatusNotFound)
 	ErrFailedDeleteImageProduct      = response.NewErrorResponse("Failed to delete image product", http.StatusInternalServerError)
 

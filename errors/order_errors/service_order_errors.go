@@ -7,6 +7,9 @@ import (
 )
 
 var (
+	ErrFailedNotDeleteAtOrder = response.NewErrorResponse("Failed to delete at order", http.StatusInternalServerError)
+
+	ErrInsufficientProductStock  = response.NewErrorResponse("Insufficient product stock", http.StatusBadRequest)
 	ErrFailedInvalidCountInStock = response.NewErrorResponse("Failed to find invalid count in stock", http.StatusInternalServerError)
 
 	ErrFailedFindMonthlyTotalRevenue           = response.NewErrorResponse("Failed to find monthly total revenue", http.StatusInternalServerError)

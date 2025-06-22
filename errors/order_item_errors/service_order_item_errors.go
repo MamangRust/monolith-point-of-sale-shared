@@ -7,8 +7,10 @@ import (
 )
 
 var (
-	ErrFailedOrderItemEmpty  = response.NewErrorResponse("Failed to find order item", http.StatusInternalServerError)
-	ErrFailedInvalidQuantity = response.NewErrorResponse("Invalid quantity", http.StatusBadRequest)
+	ErrFailedOrderItemEmptyId     = response.NewErrorResponse("Order item ID is empty", http.StatusBadRequest)
+	ErrFailedNotDeleteAtOrderItem = response.NewErrorResponse("Failed to delete at order item", http.StatusInternalServerError)
+	ErrFailedOrderItemEmpty       = response.NewErrorResponse("Failed to find order item", http.StatusInternalServerError)
+	ErrFailedInvalidQuantity      = response.NewErrorResponse("Invalid quantity", http.StatusBadRequest)
 
 	ErrFailedOrderItemNotFound = response.NewErrorResponse("Order item not found", http.StatusNotFound)
 	ErrFailedTrashedOrderItem  = response.NewErrorResponse("Order item is already trashed", http.StatusBadRequest)
